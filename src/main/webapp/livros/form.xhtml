@@ -10,19 +10,19 @@
 	
 		<div>
 			<h:outputLabel>Título</h:outputLabel>
-			<h:inputText/>
+			<h:inputText value="#{adminBooksBean.book.title}" />
 		</div>
 		<div>
 			<h:outputLabel>Descrição</h:outputLabel>
-			<h:inputTextarea cols="20" rows="10" />
+			<h:inputTextarea cols="20" rows="10" value="#{adminBooksBean.book.description}" />
 		</div>
 		<div>
 			<h:outputLabel>Número de Páginas</h:outputLabel>
-			<h:inputText/>
+			<h:inputText value="#{adminBooksBean.book.numberOfPages}" />
 		</div>
 		<div>
 			<h:outputLabel>Preço</h:outputLabel>
-			<h:inputText/>
+			<h:inputText value="#{adminBooksBean.book.price}" />
 		</div>
 		<h:commandButton value="Gravar" action="#{adminBooksBean.save}" />
 	
